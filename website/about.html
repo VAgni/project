@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - HowTo-verticalTabs(1)</title>
+  <!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/about.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark site-navbar fixed-top">
+			<a class="navbar-brand site-logo" href="index.html#">
+				<h2><span>LOGO</span></h2>
+				<p>Tag Line</p>
+			</a>
+			<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavId">
+				<!-- Main menu -->
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About Us </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="portfolio.html">Ipsum</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Tincidunt</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Lorem</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>                                                                
+				</ul>
+				<div class="social-links my-2 my-lg-0">
+					
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Header section end-->
+
+<!-- partial:index.partial.html -->
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">About Us</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Our Credo</button>
+  <button class="tablinks" onclick="openCity(event, 'Chengdu')">Value prepositio</button>
+  <button class="tablinks" onclick="openCity(event, 'China')">Preposition</button>
+ 
+</div>
+
+<div class="tabcontent" id="London">
+  <h2>About Us</h2>
+  	<p>Sed arcu metus, blandit id bibendum vitae, varius quis nunc.
+					Nullam eu libero pulvinar, porta mi vel, tincidunt felis. 
+					Morbi scelerisque eros et posuere viverra. 
+					Nam facilisis nisi sit amet efficitur euismod. 
+					Aenean ornare feugiat euismod. Quisque pellentesque diam id nisi dignissim,
+					ac euismod turpis dictum. Vivamus ut congue lorem, sed lacinia erat. 
+					Duis efficitur urna vel mollis ornare. Donec mattis auctor faucibus. 
+					Duis sed blandit tortor. Etiam sit amet diam id nisi auctor tempor. 
+					Nulla auctor luctus ante, ut consectetur nisi facilisis id. 
+					Vestibulum malesuada erat eu congue pretium. 
+					Aenean faucibus ex vel nisl tristique, eu vulputate augue rutrum.
+					Sed arcu metus, blandit id bibendum vitae, varius quis nunc.
+					Nullam eu libero pulvinar, porta mi vel, tincidunt felis. 
+					Morbi scelerisque eros et posuere viverra. 
+					Nam facilisis nisi sit amet efficitur euismod. 
+					Aenean ornare feugiat euismod. Quisque pellentesque diam id nisi dignissim,
+					ac euismod turpis dictum. Vivamus ut congue lorem, sed lacinia erat. 
+					Duis efficitur urna vel mollis ornare. Donec mattis auctor faucibus. 
+					Duis sed blandit tortor. Etiam sit amet diam id nisi auctor tempor. 
+					Nulla auctor luctus ante, ut consectetur nisi facilisis id. 
+					Vestibulum malesuada erat eu congue pretium. 
+					Aenean faucibus ex vel nisl tristique, eu vulputate augue rutrum.</p>
+</div>
+
+<div class="tabcontent" id="Paris">
+  <h2>Our Credo</h2>
+  <p>alifnpaosih fashdf pasiudhfpaius</p>
+</div>
+
+<div class="tabcontent" id="Chengdu">
+  <h2>Value prepositio</h2>
+  <p>alifnpaosih fashdf pasiudhfpaius</p>
+</div>
+
+<div class="tabcontent" id="China">
+  <h2>Preposition</h2>
+  <p>alifnpaosih fashdf pasiudhfpaius</p>
+</div>
+<!-- partial -->
+  	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/about.js"></script>
+
+</body>
+</html>
