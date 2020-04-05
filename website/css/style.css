@@ -337,8 +337,14 @@ ol {
 }
 
 .site-navbar.bg-dark {
-	background-color: #03dac5 !important;
+	background-color: #063868 !important;
 }
+
+
+.site-logo {
+	background-color: #000;
+}
+
 
 .site-logo h2 {
 	font-size: 30px;
@@ -348,12 +354,12 @@ ol {
 }
 
 .site-logo h2 span {
-	color: #ff006c;
+	color: #000;
 }
 
 .site-logo p {
 	text-transform: uppercase;
-	color: #fff;
+	color: #000;
 	opacity: 0.43;
 	font-size: 9px;
 	letter-spacing: 0.29em;
@@ -361,7 +367,7 @@ ol {
 }
 
 .site-navbar.navbar-dark .navbar-nav .nav-link {
-	color: #000;
+	color: #fff;
 	font-weight: 500;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -370,18 +376,18 @@ ol {
 }
 
 .site-navbar.navbar-dark .navbar-nav .nav-link:hover {
-	color: #000;
+	color: #fff;
 }
 
 .social-links a {
-	color: #000;
+	color: #fff;
 	margin-left: 30px;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .social-links a:hover {
-	color: #ff006c;
+	color: #fff;
 }
 
 /*------------------
@@ -410,7 +416,7 @@ ol {
 
 .hs-item h2 {
 	font-size: 130px;
-	color: #000;
+	color: #fff;
 	font-weight: 400;
 	margin-bottom: 20px;
 	position: relative;
