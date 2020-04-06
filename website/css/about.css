@@ -4,7 +4,7 @@ body {font-family: 'Roboto', sans-serif;
 }
 
 .tab{
-  margin-top: 200px;
+  margin-top: 180px;
   margin-left: 100px;
   float:left;
   background-color: #fff;
@@ -37,7 +37,7 @@ body {font-family: 'Roboto', sans-serif;
 }
 
 .tabcontent{
-  margin-top: 200px;
+  margin-top: 180px;
   margin-right: 100px;
   float: left;
   font-weight: 400;
@@ -52,11 +52,11 @@ body {font-family: 'Roboto', sans-serif;
 ---------------------*/
 
 .site-navbar {
-	padding: 15px 70px;
+	padding: 5px 70px;
 }
 
 .site-navbar.bg-dark {
-	background-color: #03dac5 !important;
+	background-color: #063868 !important;
 }
 
 .site-logo h2 {
@@ -80,9 +80,9 @@ body {font-family: 'Roboto', sans-serif;
 }
 
 .site-navbar.navbar-dark .navbar-nav .nav-link {
-	color: #000;
+	color: #fff;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 13px;
 	text-transform: uppercase;
 	padding-right: 25px;
 	padding-left: 25px;
@@ -93,14 +93,14 @@ body {font-family: 'Roboto', sans-serif;
 }
 
 .social-links a {
-	color: #000;
+	color: #fff;
 	margin-left: 30px;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .social-links a:hover {
-	color: #ff006c;
+	color: #fff;
 }
 
 
@@ -113,7 +113,7 @@ body {font-family: 'Roboto', sans-serif;
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.site-navbar {
-		padding: 15px 70px;
+		padding: 5px 70px;
 		display: block;
 		text-align: center;
 	}
@@ -147,13 +147,13 @@ body {font-family: 'Roboto', sans-serif;
 	}
 	
 	.tab{
-  margin-top: 150px;
+  margin-top: 140px;
   margin-left: 20px;
   width: calc(30% - 20px );
 }
 
 .tabcontent{
-	margin-top: 150px;
+	margin-top: 140px;
   margin-right: 20px;
   padding: 10px 20px 10px 20px;
   width: calc(70% - 30px );

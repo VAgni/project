@@ -104,7 +104,7 @@ ol {
 
 .xyz{
 	position: absolute;
-	bottom: 20px;
+	bottom: 0px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -114,7 +114,8 @@ ol {
 	border-radius: 100px;
 	background-color: #fff;
 	transform: scale(0.8,0.8);
-  -webkit-transform: scale(0.6,0.6);
+  -webkit-transform: scale(0.4,0.4);
+  z-index: 99;
 }
 
 .arrow {
@@ -333,7 +334,7 @@ ol {
 ---------------------*/
 
 .site-navbar {
-	padding: 15px 70px;
+	padding: 5px 70px;
 }
 
 .site-navbar.bg-dark {
@@ -369,7 +370,7 @@ ol {
 .site-navbar.navbar-dark .navbar-nav .nav-link {
 	color: #fff;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 13px;
 	text-transform: uppercase;
 	padding-right: 25px;
 	padding-left: 25px;
@@ -522,15 +523,20 @@ ol {
 
 .hero-slider .owl-dots {
 	position: absolute;
-	right: 210px;
-	bottom: 34px;
+	right: 0; left: 0;
+	margin: auto;
+	top: 74px;
+	width:36px;
 }
 
 .hero-slider .owl-dots .owl-dot {
-	width: 33px;
-	height: 3px;
+	
 	background: #fff;
-	margin-right: 7px;
+	margin-right: 3px;
+	margin-left: 3px;
+	border-radius: 100px;
+	height: 6px;
+	width: 6px;
 }
 
 .hero-slider .owl-dots .owl-dot.active {
@@ -545,6 +551,7 @@ ol {
 	position: absolute;
 	right: 130px;
 	bottom: 25px;
+	display: none;
 }
 
 .hero-slider .owl-nav button.owl-prev {
@@ -594,14 +601,17 @@ ol {
 
 .portfolio-item h4 {
 	position: absolute;
-	width: 100%;
+	width: 90%;
+	height: 10%;
 	text-align: center;
-	top: 40%;
-	margin-top: -14px;
+	top: 0%;
+	bottom: 0;
+	margin: auto 5%;
 	z-index: 5;
 	opacity: 0;
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
+	color: #000;
 }
 
 .portfolio-item:after {
@@ -611,7 +621,7 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.5);
 	border: 0px solid #030204;
 	z-index: 2;
 	opacity: 0;
@@ -625,7 +635,6 @@ ol {
 }
 
 .portfolio-item:hover h4 {
-	top: 50%;
 	opacity: 1;
 }
 
@@ -1498,6 +1507,22 @@ ol {
 	margin-bottom: 5px;
 }
 
+.txt-l{
+	text-align: left;
+	position: absolute !important;
+	left: 0;
+}
+
+.txt-r{
+	text-align: right;
+	position: absolute !important;
+	right: 0;
+}
+
+.container {
+	position: relative;
+}
+
 /* ----------------
   Responsive
 ---------------------*/
@@ -1517,8 +1542,7 @@ ol {
 	.hs-item h2 {
 		font-size: 80px;
 		width: 600px;
-		margin-left: auto;
-		margin-right: auto;
+
 	}
 	.blog-slider .owl-nav {
 		text-align: center;
@@ -1552,12 +1576,15 @@ ol {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.site-navbar {
-		padding: 15px 70px;
+		padding: 5px 70px;
 		display: block;
 		text-align: center;
 	}
 	.navbar-brand {
 		display: block;
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.navbar-expand-md .navbar-collapse {
 		display: block !important;
@@ -1630,7 +1657,8 @@ ol {
 		margin-left: 0;
 	}
 	.hero-slider .owl-dots {
-		right: 100px;
+		right: 0;
+		left: 0;
 	}
 	.hero-slider .owl-nav {
 		right: 15px;
@@ -1641,6 +1669,7 @@ ol {
 	}
 	.hs-item h2 {
 		font-size: 50px;
+		width: 500px;
 	}
 	.hs-item .next-hs {
 		display: none;
@@ -1729,17 +1758,32 @@ ol {
 	.sidebar {
 		padding-top: 50px;
 	}
+	
+	.portfolio-item h4 {
+	opacity: 1;
+	width: 100%;
+	height: 30%;
+	font-size: 17px;
+}
+
+.portfolio-item:after {
+	opacity: 1;
+	border: 5px solid #030204;
+}
+
+	
 }
 
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
 	.site-navbar {
-		padding: 15px;
+		padding: 5px 15px;
 	}
 	.hs-item h2,
 	.page-top-section h2 {
 		font-size: 40px;
+		width: 300px;
 	}
 	.award-slider .owl-controls {
 		padding-bottom: 50px;
