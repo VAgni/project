@@ -159,8 +159,8 @@ ol {
 }
 
 .spad {
-	padding-top: 90px;
-	padding-bottom: 100px;
+	padding-top: 70px;
+	padding-bottom: 50px;
 }
 
 .text-white h1,
@@ -344,6 +344,8 @@ ol {
 
 .site-logo {
 	background-color: #000;
+	height: 70px;
+	width: 70px;
 }
 
 
@@ -531,16 +533,17 @@ ol {
 
 .hero-slider .owl-dots .owl-dot {
 	
-	background: #fff;
+	background: #c9f1f5;
 	margin-right: 3px;
 	margin-left: 3px;
 	border-radius: 100px;
 	height: 6px;
 	width: 6px;
+	box-shadow: 1px 1px 5px 1px #888888;
 }
 
 .hero-slider .owl-dots .owl-dot.active {
-	background: #ff006c;
+	background: #597579;
 }
 
 .hero-slider .owl-dots .owl-dot:last-child {
@@ -586,7 +589,7 @@ ol {
 .portfolio-section{
     padding-bottom: 60px;
     padding-top: 90px; 	
-	background-color: #D1F8F4;
+	background-color: #bcdfdb;
 }
 
 .portfolio-item {
@@ -595,8 +598,10 @@ ol {
 	display: block;
 }
 
-.portfolio-item img {
-	min-width: 100%;
+.portfolio-item .solid {
+	width: 100%;
+	padding: 50% 0; 
+	background-color: #1e4b77;
 }
 
 .portfolio-item h4 {
@@ -613,6 +618,20 @@ ol {
 	transition: all 0.3s ease 0s;
 	color: #000;
 }
+.portfolio-item h3 {
+	position: absolute;
+	width: 90%;
+	height: 20%;
+	text-align: center;
+	top: 0%;
+	bottom: 0;
+	margin: auto 5%;
+	z-index: 1;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	color: #fff;
+	font-size: 35px;
+}
 
 .portfolio-item:after {
 	position: absolute;
@@ -621,7 +640,7 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.8);
 	border: 0px solid #030204;
 	z-index: 2;
 	opacity: 0;
@@ -631,7 +650,7 @@ ol {
 
 .portfolio-item:hover:after {
 	opacity: 1;
-	border: 15px solid #030204;
+	border: 15px solid #042c53;
 }
 
 .portfolio-item:hover h4 {
@@ -779,6 +798,12 @@ ol {
 .footer-section {
 	padding-top: 95px;
 	padding-bottom: 70px;
+	background-color: #34726c;
+	color: #fff !important;
+}
+
+.footer-section i{
+	color: #fff !important;
 }
 
 .footer-widget .fw-title {
@@ -1092,16 +1117,6 @@ ol {
 .portfolio-section{
     background-color: #f8f5ee;	
 }
-
-.footer-section{
-	background-color: #025048;
-	color: #fff !important;
-}
-
-.footer-section i{
-	color: #fff !important;
-}
-
 
 .portfolio-page {
 	padding: 116px 132px;
@@ -1759,16 +1774,9 @@ ol {
 		padding-top: 50px;
 	}
 	
-	.portfolio-item h4 {
-	opacity: 1;
-	width: 90%;
-	height: 30%;
-	font-size: 17px;
-}
+	.portfolio-item h3 {
 
-.portfolio-item:after {
-	opacity: 1;
-	border: 5px solid #030204;
+	font-size: 18px;
 }
 
 	
