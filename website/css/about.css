@@ -41,11 +41,18 @@ body {font-family: 'Roboto', sans-serif;
   margin-right: 100px;
   float: left;
   font-weight: 400;
-  padding: 10px 50px 10px 50px;
+  padding: 10px 50px 50px 50px;
   width: calc(70% - 100px );
-  height: 700px;
+  height: auto;
+  margin-bottom: 50px;
  
 }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 /*------------------
   Header section
@@ -164,7 +171,7 @@ body {font-family: 'Roboto', sans-serif;
 .footer-widget.resent-post .rp-item span {
 	font-size: 12px;
 	font-family: "Helvetica 45 Light", sans-serif;
-	color: #ff006c;
+	color: #fff;
 }
 
 .footer-widget ul {
@@ -215,9 +222,7 @@ body {font-family: 'Roboto', sans-serif;
 	color: #ff006c;
 }
 
-#main{
-	min-height: 120vh;
-}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.site-navbar.navbar-dark .navbar-nav .nav-link {
@@ -282,9 +287,7 @@ body {font-family: 'Roboto', sans-serif;
 		color: #fff !important;
 	}
 	
-	#main{
-	min-height: 250vh;
-}
+	
 }
 
 @media only screen and (max-width: 479px) {
@@ -292,9 +295,6 @@ body {font-family: 'Roboto', sans-serif;
 		padding: 15px;
 	}
 	
-	#main{
-	min-height: 200vh;
-}
 }
 
 .site-logo{
