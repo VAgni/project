@@ -1,0 +1,142 @@
+/*------------------
+  Footer Section
+---------------------*/
+
+.footer-section {
+
+	padding-top: 75px;
+	padding-bottom: 70px;
+	background-color: #34726c;
+	color: #fff !important;
+}
+
+.footer-section i{
+	color: #fff !important;
+}
+
+.footer-widget .fw-title {
+	font-size: 24px;
+	margin-bottom: 58px;
+}
+
+.footer-widget.fw-about img {
+	margin-bottom: 50px;
+}
+
+.footer-widget.fw-about p {
+	font-size: 14px;
+	margin-bottom: 40px;
+	line-height: 2;
+}
+
+.footer-widget .fw-social a {
+	color: #030204;
+	margin-right: 25px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.footer-widget .fw-social a:hover {
+	color: #ff006c;
+}
+
+.footer-widget.resent-post .rp-item {
+	margin-bottom: 25px;
+}
+
+.footer-widget.resent-post .rp-item h4 {
+	font-size: 16px;
+	font-family: "Helvetica 45 Light", sans-serif;
+}
+
+.footer-widget.resent-post .rp-item span {
+	font-size: 12px;
+	font-family: "Helvetica 45 Light", sans-serif;
+	color: #fff;
+}
+
+.footer-widget ul {
+	list-style: none;
+}
+
+.footer-widget ul li {
+	font-size: 15px;
+	font-family: "Helvetica 45 Light", sans-serif;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.footer-widget ul li a {
+	color: #fff;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.footer-widget ul li a:hover {
+	color: #fff;
+}
+
+.footer-widget.contact-widget ul li {
+	margin-bottom: 15px;
+}
+
+.footer-widget.contact-widget span {
+	display: inline-block;
+	width: 75px;
+}
+
+.copyright {
+	padding-top: 80px;
+	text-align: center;
+}
+
+.copyright i {
+	color: #ff006c;
+}
+
+.copyright a {
+	color: #081624;
+	text-decoration: underline;
+}
+
+.copyright a:hover {
+	color: #ff006c;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.site-navbar {
+		padding: 5px 70px;
+		display: block;
+		text-align: center;
+	}
+	.navbar-brand {
+		display: block;
+	}
+	.navbar-expand-md .navbar-collapse {
+		display: block !important;
+	}
+	.navbar-expand-md .navbar-nav {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.site-navbar.navbar-dark .navbar-nav .nav-link {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.social-links a:first-child {
+		margin-left: 0;
+	}
+	.footer-widget {
+		margin-bottom: 40px;
+}
+}
+@media only screen and (max-width: 767px) {
+
+.footer-widget p{
+		margin-bottom: 40px;
+		color: #fff !important;
+	}
+	
+	
+}
