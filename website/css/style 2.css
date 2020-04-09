@@ -329,6 +329,8 @@ ol {
 	border-right: 9px solid #ff006c;
 }
 
+
+
 /*------------------
   Header section
 ---------------------*/
@@ -399,6 +401,11 @@ ol {
 
 .hero-section {
 	position: relative;
+}
+
+iframe {
+	width: 100%;
+	height: 100vh;
 }
 
 .hs-item {

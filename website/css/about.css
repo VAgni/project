@@ -1,25 +1,27 @@
 * {box-sizing: border-box}
-body {font-family: 'Roboto', sans-serif;
-
+body {
+	font-family: 'Roboto', sans-serif;
+      background-image: url("../img/1.jpg");
+	  background-size: 100vw calc( 100vh + 75px );
+	  background-repeat: no-repeat;
 }
 
 .tab{
-  margin-top: 180px;
   margin-left: 100px;
   float:left;
-  background-color: #fff;
+  background-color: transparent;
   width: calc(30% - 100px );
-  border: solid #ccc;
+  border: solid #e6ebe4;
   border-width: 0 1px 0 0;
 }
 
 .tab button{
   display: block;
-  background-color: inherit;
+  background-color: #fff;
   color: black;
   padding: 12px 16px;
   width: 100%;
-  border: solid #ccc;
+  border: solid #e6ebe4;
   border-width: 0 0 1px 0;
   outline: none;
   text-align: left;
@@ -33,17 +35,17 @@ body {font-family: 'Roboto', sans-serif;
 }
 
 .tab button.active{
-  background-color: #30E0CF;
+  background-color: #e6ebe4;
 }
 
 .tabcontent{
-  margin-top: 180px;
+	background-color: #fff;
   margin-right: 100px;
   float: left;
   font-weight: 400;
-  padding: 10px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
   width: calc(70% - 100px );
-  height: auto;
+  min-height: calc(100vh - 125px );
   margin-bottom: 50px;
  
 }
@@ -63,175 +65,96 @@ button span {
   display: block;
 }
 
-/*------------------
-  Header section
----------------------*/
 
-.site-navbar {
-	padding: 5px 70px;
+
+#pic{
+	height: 100vh;
+	background-color: transparent;
+	position: relative;
 }
 
-.site-navbar.bg-dark {
-	background-color: #063868 !important;
-}
-
-.site-logo {
-	background-color: #000;
-	height: 70px;
-	width: 70px;
-}
-
-.site-logo h2 {
-	font-size: 30px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 400;
-}
-
-.site-logo h2 span {
-	color: #ff006c;
-}
-
-.site-logo p {
-	text-transform: uppercase;
-	color: #fff;
-	opacity: 0.43;
-	font-size: 9px;
-	letter-spacing: 0.29em;
-	margin-bottom: 0;
-}
-
-.site-navbar.navbar-dark .navbar-nav .nav-link {
-	color: #fff;
+#pic h1{
+	position: absolute;
+	margin: auto;
+	left:0; right: 0; top: 0; bottom: 0;
+	color: white;
+	font-size: 60px;
 	font-weight: 600;
-	font-size: 13px;
-	text-transform: uppercase;
-	padding-right: 25px;
-	padding-left: 25px;
-}
-
-.site-navbar.navbar-dark .navbar-nav .nav-link:hover {
-	color: #000;
-}
-
-.social-links a {
-	color: #fff;
-	margin-left: 30px;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.social-links a:hover {
-	color: #fff;
-}
-
-
-/*------------------
-  Footer Section
----------------------*/
-
-.footer-section {
-
-	padding-top: 75px;
-	padding-bottom: 70px;
-	background-color: #34726c;
-	color: #fff !important;
-}
-
-.footer-section i{
-	color: #fff !important;
-}
-
-.footer-widget .fw-title {
-	font-size: 24px;
-	margin-bottom: 58px;
-}
-
-.footer-widget.fw-about img {
-	margin-bottom: 50px;
-}
-
-.footer-widget.fw-about p {
-	font-size: 14px;
-	margin-bottom: 40px;
-	line-height: 2;
-}
-
-.footer-widget .fw-social a {
-	color: #030204;
-	margin-right: 25px;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.footer-widget .fw-social a:hover {
-	color: #ff006c;
-}
-
-.footer-widget.resent-post .rp-item {
-	margin-bottom: 25px;
-}
-
-.footer-widget.resent-post .rp-item h4 {
-	font-size: 16px;
-	font-family: "Helvetica 45 Light", sans-serif;
-}
-
-.footer-widget.resent-post .rp-item span {
-	font-size: 12px;
-	font-family: "Helvetica 45 Light", sans-serif;
-	color: #fff;
-}
-
-.footer-widget ul {
-	list-style: none;
-}
-
-.footer-widget ul li {
-	font-size: 15px;
-	font-family: "Helvetica 45 Light", sans-serif;
-	margin-bottom: 10px;
-	color: #fff;
-}
-
-.footer-widget ul li a {
-	color: #fff;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.footer-widget ul li a:hover {
-	color: #fff;
-}
-
-.footer-widget.contact-widget ul li {
-	margin-bottom: 15px;
-}
-
-.footer-widget.contact-widget span {
-	display: inline-block;
-	width: 75px;
-}
-
-.copyright {
-	padding-top: 80px;
 	text-align: center;
+	min-height: 70px;
+	max-height: 200px;
+}
+#team{
+		background-color: #f8f5ee;
+		padding: 30px 0 80px;
 }
 
-.copyright i {
-	color: #ff006c;
+#team h2{
+	text-align: center;
+	font-size: 50px;
+	margin: 30px auto;
 }
 
-.copyright a {
-	color: #081624;
-	text-decoration: underline;
+#team .row{
+	text-align: center;
+	margin: auto 50px;
 }
 
-.copyright a:hover {
-	color: #ff006c;
+.portfolio-item{
+	width: 80%;
+	margin: auto;
+}
+
+#team img{
+	width: 100%;
+	height: auto;
+
 }
 
 
+.portfolio-item p {
+	position: absolute;
+	width: 75%;
+	height: 30%;
+	text-align: center;
+	top: 0%;
+	bottom: 0; left: 0; right: 0;
+	margin: auto;
+	z-index: 5;
+	opacity:0;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	color: #fff;
+	font-size: 15px;
+}
+
+.portfolio-item:after {
+	position: absolute;
+	content: "";
+	width: 75%;
+	height: calc( 100% - 45px );
+	left: 0; right: 0;
+	margin: auto;
+	top: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.portfolio-item:hover:after {
+	opacity: 1;
+}
+
+.portfolio-item:hover p {
+	opacity: 1;
+}
+
+#team h3{
+	margin: 10px auto;
+	font-size: 23px;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.site-navbar.navbar-dark .navbar-nav .nav-link {
@@ -278,13 +201,11 @@ button span {
 	}
 	
 	.tab{
-  margin-top: 140px;
   margin-left: 20px;
   width: calc(30% - 20px );
 }
 
 .tabcontent{
-	margin-top: 140px;
   margin-right: 20px;
   padding: 10px 20px 10px 20px;
   width: calc(70% - 30px );
