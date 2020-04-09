@@ -53,6 +53,15 @@ body {font-family: 'Roboto', sans-serif;
   display: table;
 }
 
+button span {
+	text-align: right;
+	float: right;
+	display: none;
+}
+
+.tab button.active span{
+  display: block;
+}
 
 /*------------------
   Header section
