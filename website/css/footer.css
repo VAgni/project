@@ -2,6 +2,10 @@
   Footer Section
 ---------------------*/
 
+ul{
+	padding-left: 0 !important;
+}
+
 .footer-section {
 
 	padding-top: 75px;
@@ -101,6 +105,17 @@
 
 .copyright a:hover {
 	color: #ff006c;
+}
+
+.pos{
+	position: absolute;
+    left: 0;
+	top: 5px;
+	font-size: 30px;
+}
+
+.rel{
+	position: relative;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

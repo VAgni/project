@@ -113,10 +113,27 @@ ol {
 	padding: 10px 0 0 15px;
 	border-radius: 100px;
 	background-color: #fff;
-	transform: scale(0.8,0.8);
+	transform: scale(0.4,0.4);
   -webkit-transform: scale(0.4,0.4);
   z-index: 99;
 }
+
+.xyz1{
+	position: fixed;
+	bottom: 0px;
+	right: 0;
+	margin: auto;
+	width: 70px;
+	height: 70px;
+	padding: 10px 0 0 15px;
+	border-radius: 100px;
+	background-color: #fff;
+	transform: scale(0.3,0.3) rotate(180deg);
+  -webkit-transform: scale(0.3,0.3) rotate(180deg);
+  z-index: 5;
+  	box-shadow: 1px 1px 5px 1px #888888;
+}
+
 
 .arrow {
   border: solid #030204;
@@ -132,6 +149,12 @@ ol {
   -webkit-transform: rotate(45deg);
 }
 
+.pos{
+	position: absolute;
+    left: 0;
+	top: 5px;
+	font-size: 30px;
+}
 
 /*---------------------
   Helper CSS
@@ -399,6 +422,7 @@ ol {
 
 .hero-section {
 	position: relative;
+	z-index: 6;
 }
 
 .hs-item {

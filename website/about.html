@@ -5,7 +5,7 @@
   <title>About| Company</title>
  <!-- Stylesheets -->
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/footer.css"/>
@@ -32,9 +32,15 @@
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About Us </a>
-					</li>
+					<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Who we are</a>
+                          <a class="dropdown-item" href="#">Our Team</a>
+                        </div>
+                    </li>
 					<li class="nav-item">
 						<a class="nav-link" href="portfolio.html">Ipsum</a>
 					</li>
@@ -56,9 +62,10 @@
 			</div>
 		</nav>
 	</header>
+	<a href="#pic" class="scrollLink"><h6 class="xyz1" ><i class="arrow down"></i></h6></a>
 	<!-- Header section end-->
-
-    <div id="pic">
+ 
+    <div id="pic" ">
         <h1>"Alone we can do so little;<br> together we can do so much."</h1>    
 	</div>
 
@@ -242,10 +249,10 @@
 				<div class="col-lg-3 col-sm-6">
 					<div class="footer-widget contact-widget">
 						<h2 class="fw-title">Contact</h2>
-						<ul>
-							<li><span>Address:</span>ABCDEF</li>
-							<li><span>Phone:</span>123456789</li>
-							<li><span>Mail:</span>ABC@GMAIL.com</li>
+                        <ul>
+							<li class="rel"><i class="fa fa-map-marker pos"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registered Office:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABCDEF</li>
+							<li class="rel"><i class="fa fa-phone pos"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123456789</li>
+							<li class="rel"><i class="fa fa-envelope-open pos"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABC@GMAIL.com</li>
 						</ul>
 					</div>
 				</div>
@@ -261,9 +268,9 @@
 
 <!-- partial -->
   	<script src="js/jquery-3.2.1.min.js"></script>
-	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- 
-	<script src="js/about.js"></script>
+	 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+	<script src="js/about.js"></script>
+     <script src="js/arrow.js"></script>
 </body>
 </html>

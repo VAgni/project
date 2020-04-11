@@ -46,7 +46,7 @@
 }
 
 .site-navbar.navbar-dark .navbar-nav .nav-link:hover {
-	color: #000;
+	color: #fff;
 }
 
 .social-links a {
@@ -105,4 +105,16 @@
 
 .site-logo{
     background-color: #000;	
+}
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
+
+.dropdown-menu{
+	top: 85%;
+}
+
+
+	color: yellow;
 }

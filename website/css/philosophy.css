@@ -1,8 +1,8 @@
 * {box-sizing: border-box}
 body {
 	font-family: 'Roboto', sans-serif;
-      background-image: url("../img/1.jpg");
-	  background-size: 100vw calc( 100vh + 75px );
+     background-image: url("../img/ph.jpeg");
+	  background-size: 100vw calc( 15vh + 145px );
 	  background-repeat: no-repeat;
 }
 
@@ -15,7 +15,7 @@ body {
   border-width: 0 1px 0 0;
 }
 
-.tab button{
+.tab div{
   display: block;
   background-color: #fff;
   color: black;
@@ -30,12 +30,27 @@ body {
   font-size: 17px;
 }
 
-.tab button:hover{
-  background-color: #BAF4EF;
+.tab div .tablinks {
+	display: none;
 }
 
-.tab button.active{
-  background-color: #e6ebe4;
+.tab div .london {
+	display: block;
+}
+
+.tab i {
+	float: right;
+}
+
+.tab .london-div .fa-plus-circle {
+	display: none;
+}
+
+.tab .fa-minus-circle {
+	display: none;
+}
+.tab .london-div .fa-minus-circle {
+	display: block;
 }
 
 .tabcontent{
@@ -45,9 +60,8 @@ body {
   font-weight: 400;
   padding: 50px 50px 50px 50px;
   width: calc(70% - 100px );
-  min-height: calc(100vh - 125px );
   margin-bottom: 50px;
- 
+  
 }
 .clearfix::after {
   content: "";
@@ -55,20 +69,15 @@ body {
   display: table;
 }
 
-button span {
-	text-align: right;
-	float: right;
-	display: none;
-}
 
-.tab button.active span{
+.tab .active{
   display: block;
 }
 
 
 
 #pic{
-	height: 100vh;
+	height: calc( 15vh + 70px );
 	background-color: transparent;
 	position: relative;
 }
@@ -95,65 +104,33 @@ button span {
 	margin: 30px auto;
 }
 
-#team .row{
-	text-align: center;
-	margin: auto 50px;
-}
-
-.portfolio-item{
-	width: 80%;
-	margin: auto;
-}
-
-#team img{
-	width: 100%;
-	height: auto;
-
-}
-
-
-.portfolio-item p {
-	position: absolute;
-	width: 75%;
-	height: 30%;
-	text-align: center;
-	top: 0%;
-	bottom: 0; left: 0; right: 0;
-	margin: auto;
-	z-index: 5;
-	opacity:0;
-	-webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-	color: #fff;
-	font-size: 15px;
-}
-
-.portfolio-item:after {
-	position: absolute;
-	content: "";
-	width: 75%;
-	height: calc( 100% - 45px );
-	left: 0; right: 0;
-	margin: auto;
-	top: 0;
-	background: rgba(0, 0, 0, 0.8);
-	z-index: 2;
-	opacity: 0;
-	-webkit-transition: all 0.4s ease 0s;
-	transition: all 0.4s ease 0s;
-}
-
-.portfolio-item:hover:after {
-	opacity: 1;
-}
-
-.portfolio-item:hover p {
-	opacity: 1;
-}
-
-#team h3{
+.carousel-inner{
+	width: 80vw;
 	margin: 10px auto;
-	font-size: 23px;
+}
+
+.carousel-item{
+	width: 100%;
+	color: #000;
+}
+
+.carousel-item img{
+	width: 300px !important;
+	margin: auto !important;
+	border-radius: 1000px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	background-color: #000;
+	height: 50px;
+	width: 50px;
+	margin: auto 20px;
+	border-radius: 100px;
+}
+
+.carousel-caption{
+	position: static !important;
+	color: #000;
 }
 
 .xyz1{
@@ -257,8 +234,25 @@ button span {
 		padding: 15px;
 	}
 	
+	.carousel-item img{
+	width: 200px !important;
+	margin: auto !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	background-color: #000;
+	height: 30px;
+	width: 30px;
+	margin: auto 10px;
+	border-radius: 100px;
+}
+	
 }
 
 .site-logo{
     background-color: #000;	
+}
+
+.active-tab {
+	color: #3d5580 !important;
 }
